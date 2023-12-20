@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Class | Paritosh Barman</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-image: url("luke-chesser-rCOWMC8qf8A-unsplash.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+        }
+
+        #main {
+            max-width: 600px;
+            border: 1px solid yellow;
+            padding: 30px;
+            border-radius: 8px;
+            backdrop-filter: blur(6px);
+            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    
+
+        #displTime {
+            font-size: 110px;
+            text-align: center;
+            color: white;
+        }
+
+        button {
+            padding: 3px 15px;
+            margin: 0 20px;
+            border: 1px solid yellow;
+            border-radius: 3px;
+            font-size: 30px;
+            color: white;
+            background-color: #537a87;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: blueviolet;
+        }
+
+        @media screen and (max-width:600px) {
+            #main{
+                max-width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="displTime">00</div>
+        <div id="buttons">
+            <button id="decriment">-</button>
+            <button id="StartPause">▶</button>
+            <button id="incriment">+</button>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
